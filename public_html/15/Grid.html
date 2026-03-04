@@ -151,6 +151,39 @@
 		<h4>Большой монитор</h4>
 		<p>	[Товар №1] | [Товар №2] | [Товар №3] | [Товар №4]</p>
 		
+		<p>Осталось разобрасть последнее страшное слово Sass (Syntactically Awesome Style Sheets)</p>
+		<p>Условно это тот же самы CSS, но более удобный.</p>
+		<p>Например мы можем прописать следующую вещь:</p>
+		<pre> 
+			.button {
+                background-color: blue;
+                color: white;
+                padding: 10px;
+            }
+
+            .large {
+				background-color: blue;
+                color: white;
+                padding: 20px;
+            }
+		</pre>
+        <p>т.е у нас создается ещё один класс в котором мы повторяем чатсь кода</p>
+		<p>Однако благодаря Sass мы можем написать следующую вещь</p>
+		<pre>
+			$main-color: blue;
+            $text-color: white;
+			.button {
+                background-color: $main-color;
+                color: $text-color;
+                padding: 10px;
+            }
+
+            &large {
+                padding: 20px;
+            }
+		</pre>
+		<p>т.е мы создали две переменные, и вложили стиль в другой стиль. Цвет унаследовался автоматически</p>
+		<p>Условно &-large = .button-large</p>
 		
 	</body>
 </html>
