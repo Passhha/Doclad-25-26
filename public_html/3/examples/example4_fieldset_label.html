@@ -6,19 +6,46 @@
         <title>Формы и интерактивные элементы</title>
         <link rel='stylesheet' href='../../css/3.css'>
     </head>
-    <body>
-        <form>
-            <fieldset>
-                <legend>Регистрация</legend>
+    <body div class="example4">
+            <form>
 
-                <label for="name">Имя:</label>
-                <input id="name" type="text">
+                <fieldset>
+                    <legend>Личные данные</legend>
 
-                <br><br>
+                    <label for="name">Имя:</label>
+                    <input id="name" type="text">
 
-                <label for="email">Email:</label>
-                <input id="email" type="email">
-            </fieldset>
-        </form>
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input id="email" type="email">
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Тип аккаунта</legend>
+
+                    <label>
+                        <input type="radio" name="account" checked>
+                        Студент
+                    </label>
+                    <label>
+                        <input type="radio" name="account">
+                        Преподаватель
+                    </label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Выберите свой город</legend>
+                    <select>
+                        <option>Ярославль</option>
+                        <option>Санкт-Петербург</option>
+                        <option>Москва</option>
+                    </select>
+                </fieldset>
+            </form>
     </body>
 </html>
